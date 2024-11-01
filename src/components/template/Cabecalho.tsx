@@ -5,7 +5,7 @@ export default function Cabecalho() {
     <header className="flex items-center bg-neutral-900 h-20 gap-5 px-5 justify-between">
       <Logo />
       <span className="flex-grow"></span>
-      <MenuUser user={"A"} />
+      <MenuUser />
     </header>
   );
 }

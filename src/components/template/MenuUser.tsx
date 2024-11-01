@@ -1,7 +1,12 @@
-export default function MenuUser({ user }: any) {
+import Link from "next/link";
+
+export default function MenuUser() {
   return (
-    <div className="flex w-10 h-10 rounded-full bg-purple-500 items-center justify-center text-lg font-bold">
-      {user}
-    </div>
+    <Link
+      href="/about"
+      className="flex px-2 py-1 rounded-lg bg-blue-500 items-center justify-center text-lg font-medium"
+    >
+      About
+    </Link>
   );
 }

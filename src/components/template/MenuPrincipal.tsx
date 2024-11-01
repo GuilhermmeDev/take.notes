@@ -26,16 +26,16 @@ export default function MenuPrincipal() {
   }
 
   return (
-    <main className="flex justify-center items-center flex-col flex-grow min-h-full my-12">
+    <main className="flex justify-center items-center flex-col flex-grow min-h-full bg-black">
       <Logo />
-      <h1 className="font-bold text-3xl my-12">Defina sua tarefas de hoje</h1>
+      <h1 className="font-bold text-3xl my-12">Define your tasks for today.</h1>
       <div className="flex flex-row w-full justify-center">
         <input
           type="text"
           name="task"
           id="task"
           value={nome}
-          placeholder="Uma tarefa de hoje (ex. Ir à academia)"
+          placeholder="A task for today (e.g. going to the gym)"
           className="w-1/2 bg-zinc-800 rounded-lg text-zinc-300 p-2"
           onChange={(e) => {
             setNome(e.target.value);
@@ -59,9 +59,9 @@ export default function MenuPrincipal() {
           {tasks.map((task, i) => (
             <li
               key={i}
-              className="bg-neutral-900 flex-grow w-full p-3 my-4 rounded-xl flex flex-row justify-between items-center"
+              className="bg-neutral-900 flex-grow w-full p-3 my-4 rounded-xl flex flex-row justify-between items-center text-white"
             >
-              <div className="flex items-center">
+              <div className="flex items-center w-full max-w-1/2">
                 <label
                   className="relative flex items-center p-3 rounded-full cursor-pointer"
                   htmlFor="check"
@@ -94,7 +94,10 @@ export default function MenuPrincipal() {
                     </svg>
                   </span>
                 </label>
-                <label className="" htmlFor={task}>
+                <label
+                  className="flex w-full flex-wrap max-w-1/2 break-all"
+                  htmlFor={task}
+                >
                   {task}
                 </label>
               </div>
@@ -108,7 +111,7 @@ export default function MenuPrincipal() {
       {complete.length >= 1 && (
         <div className="w-full flex flex-col items-center">
           <h1 className="text-2xl font-semibold text-neutral-400 my-12">
-            Tarefas Cumpridas
+            Tasks completed
           </h1>
           <div className="w-1/2">
             <TasksComplete

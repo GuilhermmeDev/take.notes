@@ -6,7 +6,7 @@ export default function Logo() {
         <span className="h-7 w-7 rounded-full bg-white"></span>
         <span className="h-7 w-7 rounded-full bg-white"></span>
       </div>
-      <span className="font-medium text-xl">Take.Notes</span>
+      <span className="text-xl text-white font-bold">Take.Notes</span>
     </div>
   );
 }

@@ -52,7 +52,7 @@ export default function TasksComplete({ completed, tasks, setTasks }: any) {
               </span>
             </label>
             <label
-              className="mt-px font-light text-neutral-500 cursor-pointer select-none line-through"
+              className="mt-px font-light text-neutral-500 cursor-pointer select-none line-through flex w-full flex-wrap max-w-1/2 break-all"
               htmlFor="check"
             >
               {prop}
