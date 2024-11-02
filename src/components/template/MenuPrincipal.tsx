@@ -26,9 +26,11 @@ export default function MenuPrincipal() {
   }
 
   return (
-    <main className="flex justify-center items-center flex-col flex-grow min-h-full bg-black">
+    <main className="flex justify-center text-center items-center flex-col flex-grow min-h-full bg-black">
       <Logo />
-      <h1 className="font-bold text-3xl my-12">Define your tasks for today.</h1>
+      <h1 className="font-bold text-3xl my-12 mx-4">
+        Define your tasks for today.
+      </h1>
       <div className="flex flex-row w-full justify-center">
         <input
           type="text"
